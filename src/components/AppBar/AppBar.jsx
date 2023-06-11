@@ -23,7 +23,7 @@ export const AppBars = () => {
           variant="h6"
           noWrap
           component="a"
-          href="/"
+          href="https://denysabramets.github.io/goit-react-hw-08-phonebook/"
           sx={{
             mr: 2,
             display: { xs: 'none', md: 'inline' },
