@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[415],{5415:function(e,n,t){t.r(n);var c,i,o=t(168),r=t(7686),a=t(184),l=r.Z.div(c||(c=(0,o.Z)(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  min-height: calc(100vh - 50px);\n"]))),h=r.Z.h1(i||(i=(0,o.Z)(["\n  font-weight: 500;\n  font-size: 48px;\n  text-align: center;\n"])));n.default=function(){return(0,a.jsx)(l,{children:(0,a.jsx)(h,{children:"Welcome to my book Contacts"})})}}}]);
-//# sourceMappingURL=415.ad898f3b.chunk.js.map
