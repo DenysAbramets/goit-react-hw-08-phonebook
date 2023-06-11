@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  But, Description, List, ListItem } from './List.Contacts.styled';
+import { But, Description, List, ListItem } from './List.Contacts.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContacts } from '../../../redux/Contacts/operations';
 import { getConctacs, getFilter, getLoading } from 'redux/Selectors';
-import { Button } from '@mui/material';
 import { Delete } from '@mui/icons-material';
 
 const ListContacts = () => {
@@ -25,7 +24,13 @@ const ListContacts = () => {
           <Description>
             {name}: {number}
           </Description>
-          <But size="small"  variant="outlined" startIcon={<Delete />} data-id={id} onClick={() => dispatch(deleteContacts(id))}>
+          <But
+            size="small"
+            variant="outlined"
+            startIcon={<Delete />}
+            data-id={id}
+            onClick={() => dispatch(deleteContacts(id))}
+          >
             Delete
           </But>
         </ListItem>
