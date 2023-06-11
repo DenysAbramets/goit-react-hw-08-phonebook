@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Button } from '@mui/material';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
@@ -55,7 +56,9 @@ function LoginForm() {
           onChange={handleChange}
         />
       </Label>
-      <button type="submit">Log In</button>
+      <Button variant="outlined" type="submit">
+        Log In
+      </Button>
     </Form>
   );
 }

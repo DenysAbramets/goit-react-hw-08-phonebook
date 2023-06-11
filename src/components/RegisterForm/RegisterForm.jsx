@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperations } from '../../redux/auth/';
 import { NavLink } from 'react-router-dom';
+import { Button } from '@mui/material';
 const Form = styled.form`
   width: 320px;
 `;
@@ -11,7 +12,7 @@ const Label = styled.label`
   flex-direction: column;
   margin-bottom: 16px;
 `;
-const Button = styled.button`
+const Buttons = styled(Button)`
   margin-right: 10px;
 `;
 
@@ -65,9 +66,13 @@ function RegisterForm() {
           onChange={handleChange}
         />
       </Label>
-      <Button type="submit">Register</Button>
+      <Buttons variant="outlined" type="submit">
+        Register
+      </Buttons>
       <NavLink to="/login">
-        <Button type="submit">I have account </Button>
+        <Buttons variant="outlined" type="submit">
+          I have account{' '}
+        </Buttons>
       </NavLink>
     </Form>
   );

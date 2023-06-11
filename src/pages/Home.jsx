@@ -15,7 +15,7 @@ const Title = styled.h1`
 function Home() {
   return (
     <Container>
-      <Title>Welcome to my book Contacts</Title>
+      <Title>Welcome to my Heart,BUBA💕!</Title>
     </Container>
   );
 }

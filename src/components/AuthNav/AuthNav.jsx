@@ -12,12 +12,17 @@ const StyledLink = styled(NavLink)`
     color: #ff0000;
   }
 `;
+
+const Nav = styled.nav`
+  margin-left: auto;
+`;
+
 function AuthNav() {
   return (
-    <nav>
+    <Nav>
       <StyledLink to="/register">Register</StyledLink>
       <StyledLink to="/login">Log In</StyledLink>
-    </nav>
+    </Nav>
   );
 }
 

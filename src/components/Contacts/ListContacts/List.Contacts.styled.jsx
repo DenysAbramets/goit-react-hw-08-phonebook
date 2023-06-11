@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { Button } from '@mui/material';
+
 
 export const List = styled.ul`
   list-style-type: none;
@@ -10,7 +12,7 @@ export const ListItem = styled.li`
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 50px;
   align-items: center;
   &:not(:last-child) {
@@ -23,6 +25,8 @@ export const Description = styled.p`
   text-decoration: none;
   font-size: 1.2rem;
 `;
-export const Button = styled.button`
+export const But = styled(Button)`
   height: 35px;
+  margin-left: 15px;
+  border-radius: 5px;
 `;

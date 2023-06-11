@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
-import { Button, Form, Input, Label } from './Form.styled';
+import { But, Form, Input, Label } from './Form.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContacts } from '../../../redux/Contacts/operations';
 
@@ -60,9 +60,9 @@ export default function ContactForm() {
         onChange={handleChange}
       />
 
-      <Button type="submit" disabled={!name || !number}>
+      <But type="submit" disabled={!name || !number}>
         Add contact
-      </Button>
+      </But>
     </Form>
   );
 }
