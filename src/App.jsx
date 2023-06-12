@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes , } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, lazy } from 'react';
 import Layout from 'components/Layout/Layout';
@@ -36,7 +36,7 @@ export function App() {
             element={
               <PublicRoute
                 restricted
-                redirectTo="/contacts"
+                redirectTo="contacts"
                 component={<Register />}
               />
             }
@@ -46,7 +46,7 @@ export function App() {
             element={
               <PublicRoute
                 restricted
-                redirectTo="/contacts"
+                redirectTo="contacts"
                 component={<Login />}
               />
             }
