@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 export default function PublicRoute({
   restricted = false,
-  redirectTo = 'goit-react-hw-08-phonebook/',
+  redirectTo = '/',
   component: Component,
 }) {
   const isLoggedIn = useSelector(getStatus);

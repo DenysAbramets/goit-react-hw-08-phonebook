@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes , } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, lazy } from 'react';
 import Layout from 'components/Layout/Layout';
@@ -25,28 +25,28 @@ export function App() {
   ) : (
     <>
       <Routes>
-        <Route path="goit-react-hw-08-phonebook/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<PublicRoute component={<Home />} />} />
           <Route
-            path="goit-react-hw-08-phonebook/contacts"
+            path="/contacts"
             element={<PrivateRoute component={<Contacts />} />}
           />
           <Route
-            path="https://denysabramets.github.io/goit-react-hw-08-phonebook/register"
+            path="/register"
             element={
               <PublicRoute
                 restricted
-                redirectTo="goit-react-hw-08-phonebook/contacts"
+                redirectTo="/contacts"
                 component={<Register />}
               />
             }
           />
           <Route
-            path="https://denysabramets.github.io/goit-react-hw-08-phonebook/login"
+            path="/login"
             element={
               <PublicRoute
                 restricted
-                redirectTo="goit-react-hw-08-phonebook/contacts"
+                redirectTo="/contacts"
                 component={<Login />}
               />
             }
