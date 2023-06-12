@@ -20,8 +20,8 @@ const Nav = styled.nav`
 function AuthNav() {
   return (
     <Nav>
-      <StyledLink to="/register">Register</StyledLink>
-      <StyledLink to="/login">Log In</StyledLink>
+      <StyledLink to="register">Register</StyledLink>
+      <StyledLink to="login">Log In</StyledLink>
     </Nav>
   );
 }

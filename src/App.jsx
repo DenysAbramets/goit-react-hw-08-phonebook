@@ -28,15 +28,15 @@ export function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<PublicRoute component={<Home />} />} />
           <Route
-            path="/contacts"
+            path="contacts"
             element={<PrivateRoute component={<Contacts />} />}
           />
           <Route
-            path="/register"
+            path="register"
             element={
               <PublicRoute
                 restricted
-                redirectTo="/contacts"
+                redirectTo="contacts"
                 component={<Register />}
               />
             }
@@ -46,7 +46,7 @@ export function App() {
             element={
               <PublicRoute
                 restricted
-                redirectTo="/contacts"
+                redirectTo="contacts"
                 component={<Login />}
               />
             }
