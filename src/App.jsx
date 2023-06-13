@@ -38,7 +38,7 @@ export function App() {
             element={
               <PublicRoute
                 restricted
-                redirectTo="contacts"
+                redirectTo="/contacts"
                 component={<Register />}
               />
             }
@@ -48,7 +48,7 @@ export function App() {
             element={
               <PublicRoute
                 restricted
-                redirectTo="contacts"
+                redirectTo="/contacts"
                 component={<Login />}
               />
             }
