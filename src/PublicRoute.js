@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 export default function PublicRoute({
   restricted = false,
-  redirectTo = '/login',
+  redirectTo = '/',
   component: Component,
 }) {
   const isLoggedIn = useSelector(getStatus);
