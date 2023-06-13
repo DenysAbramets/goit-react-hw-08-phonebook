@@ -13,10 +13,7 @@ import Register from 'pages/Register';
 import Login from 'pages/Login';
 
 
-// const Home = lazy(() => import('pages/Home'));
-// const Contacts = lazy(() => import('pages/Contacts'));
-// const Register = lazy(() => import('pages/Register'));
-// const Login = lazy(() => import('pages/Login'));
+
 
 export function App() {
   const dispatch = useDispatch();

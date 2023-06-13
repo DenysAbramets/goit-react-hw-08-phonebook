@@ -8,9 +8,8 @@ const Layout = () => {
     <div>
       <>
         <AppBars />
-        {/* <Suspense fallback={<div>Loading...</div>}> */}
           <Outlet />
-        {/* </Suspense> */}
+        
       </>
     </div>
   );
